@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RPS Multiplayer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse" id="navbar">
+            <h3 style="color: white;">Rock Paper Scissors</h3>
+        </nav>
+        <div class="row">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Name">
+                </div>
+                <button id="start" type="submit" class="btn btn-default">Start</button>
+            </form>
+            <div class="row">
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="panel panel-default">
+                            <span id="WaitingPlayer1"></span><span><h5 id="waitingForPlayerOne">Waiting for a player:</h5></span>
+                        </div>
+                        <div class="jumbotron">
+                            <div class="row">
+                                <button id="rockBox1" onclick="buttonSelect('rock',1)" class="btnMargin">
+                                    <h6>Rock</h6></button>
+                            </div>
+                            <div class="row">
+                                <button Id="paperBox1" onclick="buttonSelect('paper',1)" class="btnMargin">
+                                    <h6>Paper</h6></button>
+                            </div>
+                            <div class="row">
+                                <button id="scissorsBox1" onclick="buttonSelect('scissors',1)" class="btnMargin">
+                                    <h6>Scissors</h6></button>
+                                <div>
+                                    <h6 class="inline">Wins:</h6>
+                                    <span class="badge" id="wins-player1"></span>
+                                    <h6 class="inline">losses:</h6>
+                                    <span class="badge" id="losses-playerOne"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="panel panel-default">
+                            <h5 id="displayWinnersName">name</h5>
+                        </div>
+                        <div class="jumbotron">
+                            <span><h5 id ="displayWinningChoice"></h5></span>
+                          
+                            <h3 id="displayWon">Won!</h3>
+                            <h3 id="displayTie"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="panel panel-default">
+                            <span id="WaitingPlayer2"></span><span><h5 id="waitingForPlayerTwo">Waiting for a player:</h5></span>
+                        </div>
+                        <div class="jumbotron">
+                            <div class="row">
+                                <button id="rockBox2" onclick="buttonSelect('rock',2)" class="btnMargin">
+                                    <h6>Rock</h6></button>
+                            </div>
+                            <div class="row">
+                                <button Id="paperBox2" onclick="buttonSelect('paper',2)" class="btnMargin">
+                                    <h6>Paper</h6></button>
+                            </div>
+                            <div class="row">
+                                <button id="scissorsBox2" onclick="buttonSelect('scissors',2)" class="btnMargin">
+                                    <h6>Scissors</h6></button>
+                                <div>
+                                    <h6 class="inline">Wins:</h6>
+                                    <span class="badge" id="wins-player2"></span>
+                                    <h6 class="inline">losses:</h6>
+                                    <span class="badge" id="losses-playerTwo"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

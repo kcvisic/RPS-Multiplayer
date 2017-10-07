@@ -1,0 +1,21 @@
+
+body{
+	background-color:#85A89E;
+}
+#displayWon{
+	display: none;
+}
+
+#navbar{
+	justify-content: center; display: flex;
+}
+.panel {
+	padding-left:10px;
+}
+.btnMargin{
+	margin-bottom: 10px;
+	
+}
+
+
+
