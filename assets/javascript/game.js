@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-    apiKey: "YOUR-INFO-HERE",
-    authDomain: "YOUR-INFO-HERE",
-    databaseURL: "YOUR-INFO-HERE",
-    projectId: "YOUR-INFO-HERE",
-    storageBucket: "YOUR-INFO-HERE",
-    messagingSenderId: "YOUR-INFO-HERE"
+    apiKey: "AIzaSyDblLR6SgJN4cbErVF9XAo5lX47NnPfwoA",
+    authDomain: "rps-multiplayer-e0a08.firebaseapp.com",
+    databaseURL: "https://rps-multiplayer-e0a08.firebaseio.com",
+    projectId: "rps-multiplayer-e0a08",
+    storageBucket: "",
+    messagingSenderId: "224762753230"
 };
 
 firebase.initializeApp(config);
